@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: linear-gradient(to right, #f6fcfb, #e6f7f5);
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(113, 203, 175, 0.1);
+}
+
+.logo-image img {
+  width: 75px;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar .navbar-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  min-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .navbar-links a {
+  margin-right: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2c3e50;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  transition: color .3s;
+}
+
+.navbar .navbar-links a:hover {
+  color: rgb(113, 203, 175);
+}
+
+#zabiegi-nav {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.zabiegi-oferta {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: none; 
+  width: 350px;
+  background-color: #ffffff;
+  z-index: 1001;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: none;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid rgba(113, 203, 175, 0.1);
+  border-top: none;
+}
+
+.zabiegi-oferta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.zabiegi-oferta ul li {
+  width: 100%;
+}
+
+.zabiegi-oferta ul li a {
+  display: block;
+  padding: 15px 25px;
+  margin-right: 0 !important;
+  text-align: left;
+  font-size: 11px;
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.zabiegi-oferta ul li a:hover {
+  background-color: #f6fcfb;
+  color: rgb(113, 203, 175);
+  padding-left: 35px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 280px; 
+  z-index: 2000;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  padding-top: 20px;
+}
+
+.sidebar .navbar-links {
+  position: relative;
+  top: 60px;
+  left: 0;
+  transform: none;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .navbar-links a {
+  margin: 0;
+  padding: 15px 25px; 
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  color: #2c3e50;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sidebar .zabiegi-oferta ul li a {
+  font-size: 0.7rem;
+  padding: 12px 30px 12px 20px; 
+  line-height: 1.5;
+  white-space: normal;
+  word-wrap: break-word;
+  text-transform: none;
+  display: block;
+}
+
+.menu-icon, .cross-icon {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cross-icon {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+@media (max-width: 1100px) {
+  .navbar .navbar-links {
+    display: none;
+  }
+}
+
+@media (min-width: 1101px) {
+  .menu-icon {
+    display: none;
+  }
+}

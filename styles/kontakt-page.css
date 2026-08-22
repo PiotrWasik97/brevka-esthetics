@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@300;400;600&display=swap');
+
+:root {
+    --mint: #71cba7;
+    --dark: #2c3e50;
+    --soft-bg: #f6fcfb;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.contact-page-hero {
+    padding: 150px 20px 60px;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('/images/PTAKI\ LICENCJA.png');
+    background-size: cover;
+    text-align: center;
+}
+
+.contact-page-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--dark);
+    margin: 0;
+}
+
+.contact-page-container {
+    max-width: 1100px;
+    margin: -40px auto 100px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.contact-form-wrapper {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: var(--dark);
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    font-family: inherit;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    outline: none;
+    border-color: var(--mint);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 18px;
+    background-color: var(--mint);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.submit-button:hover {
+    background-color: #5bb391;
+    transform: translateY(-2px);
+}
+
+/* Loader */
+.loader {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffffff66;
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 11px);
+}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+/* Informacje z prawej */
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background: var(--soft-bg);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.info-card i {
+    font-size: 1.5rem;
+    color: var(--mint);
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 10px;
+}
+
+.form-feedback {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .contact-page-container { grid-template-columns: 1fr; }
+    .contact-page-hero h1 { font-size: 2.2rem; }
+}

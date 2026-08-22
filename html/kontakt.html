@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Brevka Esthetics</title>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <link rel="stylesheet" href="/styles/navbar-styles.css">
+    <link rel="stylesheet" href="/styles/kontakt-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <section class = nav>
+    <nav class="sidebar">
+      <img class="cross-icon" src="/images/close.png" alt="cross-icon">
+      <div class="navbar-links">
+        <a href="index.html">Strona Główna</a>
+        <div id="zabiegi-nav">
+          <a href="#">Zabiegi</a>
+          <div class="zabiegi-oferta">
+            <ul>
+              <li> <a href="masaz_hadado.html">Masaż HADADO</a></li>
+              <li> <a href="akupunktura-estetyczna.html">Akupunktura Estetyczna</a></li>
+              <li> <a href="pinezkowanie.html">Pinezkowanie</a></li>
+              <li> <a href="guasha-plecow.html">Guasha Terapeutyczna</a></li>
+              <li> <a href="SQT-Biomicroneedling.html">SQT biomicroneedling</a></li>
+              <li> <a href="Radiofrekwencja-mikroigłowa.html">Radiofrekwencja mikroigłowa</a></li>
+              <li> <a href="oczysczanie-wodorowe.html">Oczyszczanie wodorowe</a></li>
+              <li> <a href="zabiegi-abyss.html">Zabiegi pielęgnacyjne</a></li>
+              <li> <a href="Mediderma.html">Peeling chemiczny Mediderma</a></li>
+              <li> <a href="stymulatory-tkankowe.html">Stymulatory Tkankowe</a></li>
+              <li> <a href="kwas-hialuronowy.html">Kwas Hialuronowy</a></li>
+              <li> <a href="depilacja-woskiem.html">Depilacja woskiem</a></li>
+              <li> <a href="mezoterapia-iglowa.html">Mezoterapia Igłowa</a></li>
+              <li> <a href="mezoterapia-mikroigłowa.html">Mezoterapia mikroigłowa</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="index.html#o-mnie-anchor">O mnie</a>
+        <a href="cennik.html">Cennik</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div> 
+    </nav>
+    <nav class="navbar">
+      <div class="logo-image">
+        <a href="index.html"><img src="/images/logo-salonu-removebg-preview.png" alt="strona-glowna-logo"></a>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Strona Główna</a>
+        <div id="zabiegi-nav">
+          <a href="#">Zabiegi</a>
+          <div class="zabiegi-oferta">
+            <ul>
+              <li> <a href="masaz_hadado.html">Masaż HADADO</a></li>
+              <li> <a href="akupunktura-estetyczna.html">Akupunktura Estetyczna</a></li>
+              <li> <a href="pinezkowanie.html">Pinezkowanie</a></li>
+              <li> <a href="guasha-plecow.html">Guasha Terapeutyczna</a></li>
+              <li> <a href="SQT-Biomicroneedling.html">SQT biomicroneedling</a></li>
+              <li> <a href="Radiofrekwencja-mikroigłowa.html">Radiofrekwencja mikroigłowa</a></li>
+              <li> <a href="oczysczanie-wodorowe.html">Oczyszczanie wodorowe</a></li>
+              <li> <a href="zabiegi-abyss.html">Zabiegi pielęgnacyjne</a></li>
+              <li> <a href="Mediderma.html">Peeling chemiczny Mediderma</a></li>
+              <li> <a href="stymulatory-tkankowe.html">Stymulatory Tkankowe</a></li>
+              <li> <a href="kwas-hialuronowy.html">Kwas Hialuronowy</a></li>
+              <li> <a href="depilacja-woskiem.html">Depilacja woskiem</a></li>
+              <li> <a href="mezoterapia-iglowa.html">Mezoterapia Igłowa</a></li>
+              <li> <a href="mezoterapia-mikroigłowa.html">Mezoterapia mikroigłowa</a></li>
+            </ul>
+          </div>
+        </div>
+        <a href="index.html#o-mnie-anchor">O mnie</a>
+        <a href="cennik.html">Cennik</a>
+        <a href="kontakt.html">Kontakt</a>
+        
+      </div> 
+      <img class="menu-icon" src="/images/menu.png" alt="menu-icon">
+    </nav>
+  </section>
+
+    <section class="contact-page-hero">
+        <h1>Skontaktuj się ze mną</h1>
+        <p>Umów wizytę lub zadaj pytanie dotyczące zabiegów</p>
+    </section>
+
+    <div class="contact-page-container">
+        
+        <div class="contact-form-wrapper">
+            <form id="contact-form">
+                <div class="input-group">
+                    <label for="name">Imię i Nazwisko</label>
+                    <input type="text" id="name" name="user_name" required placeholder="np. Anna Kowalska">
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Adres E-mail</label>
+                    <input type="email" id="email" name="user_email" required placeholder="email@przyklad.pl">
+                </div>
+                
+                <div class="input-group">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="W czym mogę pomóc?"></textarea>
+                </div>
+                
+                <button type="submit" id="submit-btn" class="submit-button">
+                    <span>Wyślij wiadomość</span>
+                    <div class="loader" id="loader"></div>
+                </button>
+            </form>
+            <div id="form-feedback" class="form-feedback"></div>
+        </div>
+
+        <div class="contact-info-wrapper">
+            <div class="info-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Adres</h3>
+                <p>Bohaterów Monte Cassino 28<br>Sosnowiec, Polska</p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Telefon</h3>
+                <p>511 840 745</p>
+            </div>
+            
+            <div class="info-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>kosmetologia.brewka@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/sidebar.js"></script>
+    <script src="/scripts/kontakt.js"></script>
+
+</body>
+</html>

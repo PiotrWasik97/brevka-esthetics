@@ -1,0 +1,236 @@
+.sqt-container{
+  position: relative;
+  width: 100%;
+  top: 75px;
+}
+
+.sqt-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px; 
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sqt-title h1{
+  font-size: 36px;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.sqt-title p{
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgb(12, 77, 56);
+  margin-top: 10px;
+}
+
+.sqt-title::before{
+  content: "";
+  background: url(/images/PTAKI\ LICENCJA.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.sqt-text{
+  margin-top: 25px;
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Raleway", sans-serif;
+}
+
+.sqt-text h2{
+  color: rgb(84, 178, 149);
+}
+
+.first-paragraph{
+  line-height: 25px;
+}
+
+.first-paragraph p{
+  margin-top: 50px;
+}
+
+.second-paragraph{
+  margin-top: 70px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.second-paragraph-text{
+  width: 700px;
+  padding: 0;
+  margin: 0;
+  line-height: 25px;
+}
+
+.second-paragraph-text p{
+  margin-top: 50px;
+}
+
+.second-paragraph img{
+  width: 400px;
+  height: 300px;
+}
+
+.third-paragraph{
+  margin-top: 80px;
+  line-height: 25px;
+}
+
+.third-paragraph span{
+  color: rgb(120, 210, 182);
+  font-weight: bold;
+}
+
+.forth-paragraph{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  line-height: 30px;
+  gap: 100px;
+}
+
+.forth-paragraph h2{
+ margin-bottom: 30px;
+ color: rgb(84, 178, 149);
+ margin-left: 40px;
+}
+.forth-paragraph p{
+  margin-left: 40px;
+}
+
+
+.forth-paragraph .right-column, .left-column{
+  border: 1px solid rgb(145, 222, 198);
+  border-radius: 5px;
+  box-shadow: 2px 2px 16px rgb(168, 234, 213);
+  padding: 20px;
+}
+
+.sqt-text ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.sqt-text ul li {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+
+.sqt-text ul li::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 6px; 
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/diamond-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1250px){
+  .sqt-text{
+    width: 800px;
+  }
+
+  .second-paragraph img{
+    width: 350px;
+    }
+}
+
+@media (max-width: 860px) and (min-width: 600px){
+  .sqt-text{
+    width: 520px;
+  }
+  .second-paragraph{
+    flex-direction: column;
+  }
+
+  .second-paragraph-text{
+    width: 520px;
+  }
+
+  .forth-paragraph{
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding-bottom: 100px;
+    line-height: 30px;
+    gap: 100px;
+    max-width: 90%;
+    margin: 100px auto 0 auto ;
+  }
+}
+
+@media (max-width: 599px){
+  .sqt-text{
+    width: 80%;
+  }
+  .sqt-title h1{
+    font-size: 28px;
+  }
+
+  .first-paragraph{
+    text-align: center;
+  }
+  .second-paragraph{
+    flex-direction: column-reverse;
+  }
+
+  .second-paragraph-text{
+    width: 80%;
+  }
+
+  .second-paragraph img{
+    width: 300px;
+    height: 250px;
+    }
+
+  .forth-paragraph{
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding-bottom: 100px;
+    line-height: 30px;
+    gap: 100px;
+    max-width: 100%;
+    margin: 100px auto 0 auto ;
+  }
+
+  .forth-paragraph ul li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .forth-paragraph ul li::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 6px; 
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/diamond-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}

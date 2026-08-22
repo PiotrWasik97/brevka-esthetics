@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@300;400;600&display=swap');
+
+:root {
+  --primary-mint: #71cba7;
+  --dark-text: #2c3e50;
+  --bg-solid-mint: #e6f7f5;
+}
+
+#Kontakt {
+  background-color: var(--bg-solid-mint);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.contact-container-all {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-container img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+}
+
+.adress-details {
+  flex: 1;
+  max-width: 400px;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.05rem;
+  color: var(--dark-text);
+  margin-bottom: 25px;
+  padding-left: 50px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.custom-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url('/images/placeholder.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.contact-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-logos a {
+  color: var(--primary-mint);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-logos a:hover {
+  color: #035144;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1100px) {
+  .contact-container img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-container img {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  #Kontakt {
+    padding: 40px 0;
+  }
+  
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-logos {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .custom-list li {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+
+  .custom-list li::before {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}

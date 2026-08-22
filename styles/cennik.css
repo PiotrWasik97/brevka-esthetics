@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@300;400;600&display=swap');
+
+:root {
+  --primary-mint: #71cba7;
+  --dark-green: #0c4d38;
+  --text-gray: #454545;
+  --bg-soft: #fcfdfd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.cennik-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  position: relative;
+  flex-direction: column;
+  padding-top: 75px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cennik-header::before {
+  content: "";
+  background: url('/images/PTAKI\ LICENCJA.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4; 
+  z-index: 0;
+}
+
+.cennik-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 500;
+  color: var(--dark-green);
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.cennik-header p {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var( --dark-green);
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.cennik-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  max-width: 1200px;
+  margin: 60px auto;
+  gap: 80px;
+  padding: 0 20px;
+}
+
+.cennik-left, .cennik-right {
+  flex: 1;
+}
+
+.cennik-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  text-transform: none;
+  color: var(--dark-green);
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--primary-mint);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.cennik-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cennik-container td, .cennik-container th {
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-gray);
+}
+
+.cennik-container .first-item {
+  text-align: left;
+  width: 80%;
+}
+
+.cennik-container .second-item {
+  text-align: right;
+  width: 20%;
+  font-weight: 600;
+  color: var(--primary-mint);
+  white-space: nowrap;
+}
+
+.cennik-container p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+@media (max-width: 1100px) {
+  .cennik-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .cennik-left, .cennik-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cennik-header {
+    min-height: 200px;
+  }
+  
+  .cennik-container h2 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .cennik-container .first-item {
+    font-size: 0.85rem;
+  }
+  
+  .cennik-container .second-item {
+    font-size: 0.85rem;
+  }
+}

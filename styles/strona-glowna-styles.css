@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:wght@300;400;600&display=swap');
+
+:root {
+  --primary-mint: #71cba7;
+  --light-mint: #e6f7f5;
+  --dark-text: #2c3e50;
+}
+
+.Strona-Glówna-Into {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Strona-Glówna-Into::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/PTAKI\ LICENCJA.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.Strona-Glówna-Into::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); 
+  z-index: 0;
+}
+
+.strona-glowna-wstep {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.strona-glowna-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  color: var(--dark-text);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.strona-glowna-text p {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 16px 35px;
+  background-color: var(--primary-mint);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-mint);
+}
+
+.hero-button:hover {
+  background-color: transparent;
+  color: var(--dark-text);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#o-mnie-anchor {
+  scroll-margin-top: 75px;
+}
+
+@media (max-width: 768px) {
+  .Strona-Glówna-Into {
+    height: 100vh;
+  }
+  
+  .strona-glowna-text h1 {
+    margin-bottom: 15px;
+  }
+  
+  .hero-button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
