@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   top: 75px;
-  padding-bottom: 100px; 
+  padding-bottom: 100px;
 }
 
 .mezo-title {
@@ -23,7 +23,7 @@
   margin: 0;
   font-family: "Raleway", sans-serif;
   text-align: center;
-  color: #000; 
+  color: #000;
 }
 
 .mezo-title p {
@@ -99,7 +99,7 @@
   padding: 20px;
 }
 
-.right-column p{
+.right-column p {
   font-style: italic;
   font-size: 0.9rem;
   display: flex;
@@ -137,28 +137,33 @@
   background-position: center;
 }
 
-
 @media (max-width: 1250px) {
-  .mezo-text { width: 800px; }
+  .mezo-text {
+    width: 800px;
+  }
 }
 
 @media (max-width: 860px) {
-  .mezo-text { 
-    width: 90%; 
-    position: relative; 
+  .mezo-text {
+    width: 90%;
+    position: relative;
     left: auto;
     transform: none;
     margin: 25px auto 0 auto;
   }
-  
+
   .third-paragraph {
     grid-template-columns: 1fr;
     gap: 50px;
   }
-  
+
   .second-paragraph {
     flex-direction: column-reverse;
     gap: 40px;
+  }
+
+  .second-paragraph img {
+    max-width: 300px;
   }
 
   .third-paragraph h2 {
@@ -172,6 +177,4 @@
   .third-paragraph ul li::before {
     left: 10px;
   }
-
-  
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Raleway:wght@300;400;600&display=swap");
 
 :root {
   --primary-mint: #71cba7;
@@ -32,7 +32,7 @@
   width: 100%;
   max-width: 350px;
   height: auto;
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.05));
 }
 
 .adress-details {
@@ -47,7 +47,7 @@
 }
 
 .custom-list li {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.05rem;
   color: var(--dark-text);
   margin-bottom: 25px;
@@ -57,14 +57,14 @@
 }
 
 .custom-list li::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
-  background-image: url('/images/placeholder.png');
+  background-image: url("/images/placeholder.png");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -103,7 +103,7 @@
   #Kontakt {
     padding: 40px 0;
   }
-  
+
   .contact-container {
     flex-direction: column;
     text-align: center;
@@ -117,6 +117,7 @@
   .custom-list li {
     padding-left: 0;
     padding-top: 40px;
+    text-decoration: none;
   }
 
   .custom-list li::before {
