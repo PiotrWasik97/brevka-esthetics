@@ -1,0 +1,308 @@
+.laser-container{
+  position: relative;
+  width: 100%;
+  top: 75px;
+}
+
+.laser-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.laser-title h1{
+  font-size: 36px;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.laser-title p{
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: rgb(12, 77, 56);
+  margin-top: 10px;
+}
+
+.laser-title::before{
+  content: "";
+  background: url(/images/PTAKI\ LICENCJA.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.laser-text{
+  margin-top: 25px;
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 100px;
+}
+
+.laser-text h2{
+  color: rgb(84, 178, 149);
+  margin-bottom: 30px;
+}
+
+.laser-text h3{
+  color: rgb(84, 178, 149);
+  margin-bottom: 15px;
+}
+
+.laser-text span{
+  color: rgb(84, 178, 149);
+  font-weight: bold;
+}
+
+.laser-text p{
+  line-height: 30px;
+}
+
+/* --- Sekcje --- */
+
+.laser-section{
+  margin-top: 70px;
+}
+
+/* --- Wstęp --- */
+
+.laser-intro{
+  line-height: 30px;
+}
+
+/* --- Jak działa (zdjęcie + tekst) --- */
+
+.laser-how{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 100px;
+}
+
+.laser-how img{
+  width: 400px;
+  border-radius: 5px;
+}
+
+/* --- Karty (zalety, pytania, przeciwwskazania) --- */
+
+.laser-card{
+  border: 1px solid rgb(145, 222, 198);
+  border-radius: 5px;
+  box-shadow: 2px 2px 16px rgb(168, 234, 213);
+  padding: 25px 30px;
+}
+
+.laser-card h2,
+.laser-card h3{
+  margin-top: 0;
+}
+
+.laser-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.laser-grid .laser-card p:last-child{
+  margin-bottom: 0;
+}
+
+/* --- Listy z punktorem diamentowym --- */
+
+.laser-list{
+  list-style: none;
+  padding-left: 0;
+  line-height: 30px;
+}
+
+.laser-list li{
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+
+.laser-list li::before{
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/diamond-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.laser-sublist{
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.laser-sublist li{
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.laser-sublist li::before{
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgb(84, 178, 149);
+}
+
+/* --- Kroki zabiegu --- */
+
+.laser-steps-list{
+  list-style: none;
+  padding-left: 0;
+  counter-reset: laser-step;
+  line-height: 30px;
+}
+
+.laser-steps-list li{
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 25px;
+  counter-increment: laser-step;
+  min-height: 36px;
+}
+
+.laser-steps-list li::before{
+  content: counter(laser-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #f6fcfb, #e6f7f5);
+  border: 1px solid rgb(145, 222, 198);
+  color: rgb(12, 77, 56);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.laser-steps-list li strong{
+  color: rgb(84, 178, 149);
+}
+
+/* --- Wyróżniona informacja --- */
+
+.laser-note{
+  background: linear-gradient(to right, #f6fcfb, #e6f7f5);
+  border-left: 3px solid rgb(84, 178, 149);
+  border-radius: 5px;
+  padding: 15px 25px;
+  margin-top: 30px;
+}
+
+.laser-note p{
+  margin: 0;
+}
+
+@media (max-width: 1250px){
+  .laser-text{
+    width: 800px;
+  }
+
+  .laser-how{
+    gap: 50px;
+  }
+
+  .laser-how img{
+    width: 350px;
+  }
+
+  .laser-grid{
+    gap: 30px;
+  }
+}
+
+@media (max-width: 860px) and (min-width: 600px){
+  .laser-text{
+    width: 520px;
+  }
+
+  .laser-intro{
+    text-align: center;
+  }
+
+  .laser-how{
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .laser-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 599px){
+  .laser-text{
+    width: 80%;
+  }
+
+  .laser-title h1{
+    font-size: 28px;
+  }
+
+  .laser-intro{
+    text-align: center;
+  }
+
+  .laser-how{
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .laser-how img{
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .laser-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .laser-card{
+    padding: 20px;
+  }
+
+  .laser-list li{
+    padding-left: 30px;
+  }
+
+  .laser-steps-list li{
+    padding-left: 50px;
+  }
+
+  .laser-note{
+    padding: 15px 20px;
+  }
+}
