@@ -100,6 +100,68 @@
   border-radius: 5px;
 }
 
+/* --- Sekcje rozwijane --- */
+
+.laser-accordions{
+  margin-top: 70px;
+}
+
+.laser-accordion{
+  border: 1px solid rgb(145, 222, 198);
+  border-radius: 5px;
+  box-shadow: 2px 2px 16px rgb(168, 234, 213);
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.laser-accordion-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 18px 30px;
+  background: linear-gradient(to right, #f6fcfb, #e6f7f5);
+  cursor: pointer;
+  user-select: none;
+}
+
+.laser-accordion-head h2{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.laser-accordion-icon{
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  margin-bottom: 5px;
+  border-right: 2px solid rgb(84, 178, 149);
+  border-bottom: 2px solid rgb(84, 178, 149);
+  transform: rotate(45deg);
+  transition: transform 0.25s ease, margin 0.25s ease;
+}
+
+.laser-accordion.is-open .laser-accordion-icon{
+  margin-bottom: 0;
+  margin-top: 5px;
+  transform: rotate(-135deg);
+}
+
+.laser-accordion-body{
+  display: none;
+  padding: 25px 30px;
+  border-top: 1px solid rgb(206, 240, 228);
+}
+
+.laser-accordion-body > *:first-child{
+  margin-top: 0;
+}
+
+.laser-accordion-body > *:last-child{
+  margin-bottom: 0;
+}
+
 /* --- Karty (zalety, pytania, przeciwwskazania) --- */
 
 .laser-card{
@@ -304,5 +366,18 @@
 
   .laser-note{
     padding: 15px 20px;
+  }
+
+  .laser-accordion-head{
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .laser-accordion-head h2{
+    font-size: 17px;
+  }
+
+  .laser-accordion-body{
+    padding: 20px;
   }
 }
