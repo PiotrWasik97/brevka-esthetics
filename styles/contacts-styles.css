@@ -56,6 +56,11 @@
   line-height: 1.4;
 }
 
+.custom-list li a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .custom-list li::before {
   content: "";
   position: absolute;
