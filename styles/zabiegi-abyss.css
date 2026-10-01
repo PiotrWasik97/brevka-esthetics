@@ -1,21 +1,21 @@
-.abyss-container{
+.abyss-container {
   position: relative;
   width: 100%;
   top: 75px;
 }
 
-.abyss-title{
+.abyss-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px; 
+  height: 250px;
   position: relative;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
 }
 
-.abyss-title h1{
+.abyss-title h1 {
   font-size: 36px;
   font-weight: 400;
   position: relative;
@@ -23,7 +23,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-.abyss-title p{
+.abyss-title p {
   font-family: sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
   margin-top: 10px;
 }
 
-.abyss-title::before{
+.abyss-title::before {
   content: "";
   background: url(/images/PTAKI\ LICENCJA.png);
   background-size: cover;
@@ -43,7 +43,7 @@
   opacity: 0.4;
 }
 
-.abyss-text{
+.abyss-text {
   margin-top: 25px;
   width: 1200px;
   position: absolute;
@@ -52,42 +52,44 @@
   font-family: "Raleway", sans-serif;
 }
 
-.abyss-text span{
+.abyss-text span {
   color: rgb(84, 178, 149);
   font-weight: bold;
 }
 
-.first-paragraph{
+.first-paragraph {
   line-height: 30px;
 }
-.abyss-text h2{
+.abyss-text h2 {
   color: rgb(84, 178, 149);
 }
 
-.second-paragraph{
+.second-paragraph {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.second-paragraph-text{
+.second-paragraph-text {
   width: 700px;
   padding: 0;
   margin: 0;
   line-height: 25px;
 }
 
-.second-paragraph-text p{
+.second-paragraph-text p {
   margin-top: 50px;
 }
 
-.second-paragraph img{
+.second-paragraph img {
   width: 400px;
   height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-.abyss-text ul{
+.abyss-text ul {
   list-style: none;
   padding-left: 0;
 }
@@ -102,7 +104,7 @@
   content: "";
   position: absolute;
   left: 30px;
-  top: 6px; 
+  top: 6px;
   width: 20px;
   height: 20px;
   background-image: url(/images/diamond-icon.png);
@@ -111,7 +113,7 @@
   background-position: center;
 }
 
-.third-paragraph{
+.third-paragraph {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
@@ -120,24 +122,24 @@
   gap: 100px;
 }
 
-.third-paragraph h2{
- margin-bottom: 30px;
- color: rgb(84, 178, 149);
- margin-left: 40px;
+.third-paragraph h2 {
+  margin-bottom: 30px;
+  color: rgb(84, 178, 149);
+  margin-left: 40px;
 }
-.third-paragraph p{
+.third-paragraph p {
   margin-left: 40px;
 }
 
-
-.third-paragraph .right-column, .left-column{
+.third-paragraph .right-column,
+.left-column {
   border: 1px solid rgb(145, 222, 198);
   border-radius: 5px;
   box-shadow: 2px 2px 16px rgb(168, 234, 213);
   padding: 20px;
 }
 
-.third-paragraph ul{
+.third-paragraph ul {
   list-style: none;
   padding-left: 0;
 }
@@ -152,7 +154,7 @@
   content: "";
   position: absolute;
   left: 30px;
-  top: 6px; 
+  top: 6px;
   width: 20px;
   height: 20px;
   background-image: url(/images/diamond-icon.png);
@@ -161,88 +163,87 @@
   background-position: center;
 }
 
-@media (max-width: 1250px){
-  .abyss-text{
+@media (max-width: 1250px) {
+  .abyss-text {
     width: 800px;
   }
 
-  .second-paragraph img{
+  .second-paragraph img {
     width: 300px;
     height: 250px;
   }
 }
 
 @media (max-width: 860px) and (min-width: 600px) {
-  .abyss-text{
+  .abyss-text {
     width: 520px;
   }
 
-  .first-paragraph{
+  .first-paragraph {
     text-align: center;
   }
-  .second-paragraph{
+  .second-paragraph {
     flex-direction: column;
   }
 
-  .second-paragraph img{
+  .second-paragraph img {
     margin-top: 50px;
-    }
-
-    .second-paragraph-text{
-      width: 400px;
-      padding: 0;
-      margin: 0;
-      line-height: 25px;
-    }
-
-    .third-paragraph{
-      display: grid;
-      grid-template-columns: 1fr ;
-      padding-bottom: 100px;
-      line-height: 30px;
-      gap: 100px;
-      max-width: 90%;
-      margin: 100px auto 0 auto ;
-      font-size: 13px;
-    }
-
-    .abyss-title h1{
-      font-size: 32px;
-    }
   }
 
-  @media (max-width: 599px){
-    .abyss-text{
-      width: 80%;
-    }
-
-    .first-paragraph{
-      text-align: center;
-    }
-
-    .second-paragraph-text{
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      line-height: 25px;
-    }
-
-    .second-paragraph{
-      flex-direction: column;
-    }
-
-    .third-paragraph{
-      display: grid;
-      grid-template-columns: 1fr ;
-      padding-bottom: 100px;
-      line-height: 30px;
-      gap: 100px;
-      max-width: 100%;
-      margin: 100px auto 0 auto ;
-    }
-
-    .abyss-title h1{
-      font-size: 32px;
-    }
+  .second-paragraph-text {
+    width: 400px;
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
   }
 
+  .third-paragraph {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 100px;
+    line-height: 30px;
+    gap: 100px;
+    max-width: 90%;
+    margin: 100px auto 0 auto;
+    font-size: 13px;
+  }
+
+  .abyss-title h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 599px) {
+  .abyss-text {
+    width: 80%;
+  }
+
+  .first-paragraph {
+    text-align: center;
+  }
+
+  .second-paragraph-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+  }
+
+  .second-paragraph {
+    flex-direction: column;
+  }
+
+  .third-paragraph {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 100px;
+    line-height: 30px;
+    gap: 100px;
+    max-width: 100%;
+    margin: 100px auto 0 auto;
+  }
+
+  .abyss-title h1 {
+    font-size: 32px;
+  }
+}
