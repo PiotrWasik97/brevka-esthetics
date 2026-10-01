@@ -81,6 +81,7 @@
 
 .second-paragraph img {
   width: 400px;
+  border-radius: 5px;
 }
 
 .third-paragraph {

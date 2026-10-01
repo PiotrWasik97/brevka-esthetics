@@ -160,6 +160,10 @@
   margin-top: 0;
 }
 
+.laser-accordion-body > h3 {
+  margin-top: 40px;
+}
+
 .laser-accordion-body > *:last-child {
   margin-bottom: 0;
 }
@@ -247,7 +251,7 @@
   line-height: 30px;
 }
 
-.laser-steps-list li {
+.laser-steps-list > li {
   position: relative;
   padding-left: 60px;
   margin-bottom: 25px;
@@ -255,7 +259,7 @@
   min-height: 36px;
 }
 
-.laser-steps-list li::before {
+.laser-steps-list > li::before {
   content: counter(laser-step);
   position: absolute;
   left: 0;
@@ -272,7 +276,7 @@
   justify-content: center;
 }
 
-.laser-steps-list li strong {
+.laser-steps-list > li strong {
   color: rgb(84, 178, 149);
 }
 
@@ -362,7 +366,7 @@
     padding-left: 30px;
   }
 
-  .laser-steps-list li {
+  .laser-steps-list > li {
     padding-left: 50px;
   }
 
