@@ -307,6 +307,19 @@
     margin: 100px auto 0 auto;
   }
 
+  .third-paragraph h2,
+  .third-paragraph p {
+    margin-left: 10px;
+  }
+
+  .abyss-text .third-paragraph ul li {
+    padding-left: 35px;
+  }
+
+  .abyss-text .third-paragraph ul li::before {
+    left: 5px;
+  }
+
   .abyss-title h1 {
     font-size: 32px;
   }

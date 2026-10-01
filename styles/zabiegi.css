@@ -267,4 +267,17 @@ border-radius: 5px;
     line-height: 30px;
     gap: 50px;
   }
+
+  .third-paragraph h2,
+  .third-paragraph p{
+    margin-left: 10px;
+  }
+
+  .third-paragraph ul li{
+    padding-left: 35px;
+  }
+
+  .third-paragraph ul li::before{
+    left: 5px;
+  }
 }
