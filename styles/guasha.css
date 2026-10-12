@@ -65,10 +65,28 @@
 
 .third-paragraph {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.75fr 1.25fr;
   margin-top: 70px;
   line-height: 30px;
-  gap: 100px;
+  gap: 40px;
+}
+
+/* Zdjecie zabiegu jako kolumna obok kart - zajmuje oba wiersze siatki,
+   wiec pionowy kadr wypelnia cala wysokosc sekcji */
+.zabieg-foto {
+  grid-row: span 2;
+  align-self: start;
+  position: sticky;
+  top: 100px;
+}
+
+.zabieg-foto img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 2px 2px 16px rgb(168, 234, 213);
+  display: block;
 }
 
 .third-paragraph .right-column, .left-column {
@@ -125,6 +143,15 @@
   .mezo-text { width: 90%; }
   .mezo-title h1{
     font-size: 28px;
+  }
+
+  .zabieg-foto {
+    grid-row: auto;
+    position: static;
+  }
+
+  .zabieg-foto img {
+    height: 420px;
   }
   .third-paragraph {
     grid-template-columns: 1fr;
