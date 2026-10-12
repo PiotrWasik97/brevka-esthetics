@@ -56,6 +56,23 @@
   font-family: "Raleway", sans-serif;
 }
 
+/* masaz_hadado.html laduje dodatkowo akupunktura.css, ktory doklada
+   padding-bottom: 100px na kontenerze i na .mezo-text. Zerujemy oba, zeby
+   odstep pod przeciwwskazaniami byl taki sam jak na pozostalych podstronach
+   z tym ukladem. Selektory musza byc bardziej szczegolowe, bo akupunktura.css
+   laduje sie pozniej. */
+body .mezoterapia-container {
+  padding-bottom: 0;
+}
+
+.mezoterapia-container .mezo-text {
+  padding-bottom: 0;
+  /* zamyka kontekst formatowania, zeby margines ostatniej sekcji nie
+     wyciekal poza kontener (dzieje sie tak na mobile, gdy .mezo-text
+     wraca do normalnego przeplywu) */
+  display: flow-root;
+}
+
 .mezo-text span {
   color: rgb(84, 178, 149);
   font-weight: bold;
