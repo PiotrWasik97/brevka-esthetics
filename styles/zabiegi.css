@@ -228,6 +228,19 @@ border-radius: 5px;
     width: 520px;
   }
 
+  .third-paragraph h2,
+  .third-paragraph p{
+    margin-left: 0;
+  }
+
+  .third-paragraph ul li{
+    padding-left: 30px;
+  }
+
+  .third-paragraph ul li::before{
+    left: 3px;
+  }
+
   .first-paragraph{
     text-align: center;
   }
@@ -270,14 +283,14 @@ border-radius: 5px;
 
   .third-paragraph h2,
   .third-paragraph p{
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   .third-paragraph ul li{
-    padding-left: 35px;
+    padding-left: 30px;
   }
 
   .third-paragraph ul li::before{
-    left: 5px;
+    left: 3px;
   }
 }

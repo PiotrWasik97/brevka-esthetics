@@ -93,13 +93,14 @@
   border: 1px solid rgb(145, 222, 198);
   border-radius: 5px;
   box-shadow: 2px 2px 16px rgb(168, 234, 213);
-  padding: 30px;
+  padding: 20px;
 }
 
 .third-paragraph h2 {
   margin-bottom: 20px;
   color: rgb(84, 178, 149);
   font-size: 22px;
+  margin-left: 40px;
 }
 
 .third-paragraph ul {
@@ -109,14 +110,14 @@
 
 .third-paragraph ul li {
   position: relative;
-  padding-left: 50px;
+  padding-left: 60px;
   margin-bottom: 15px;
 }
 
 .third-paragraph ul li::before {
   content: "";
   position: absolute;
-  left: 15px;
+  left: 30px;
   top: 5px; 
   width: 20px;
   height: 20px;
@@ -159,11 +160,20 @@
     margin-top: 40px;
   }
 
+  .third-paragraph .right-column,
+  .third-paragraph .left-column {
+    padding: 20px;
+  }
+
+  .third-paragraph h2 {
+    margin-left: 0;
+  }
+
   .third-paragraph ul li {
-    padding-left: 35px;
+    padding-left: 30px;
   }
 
   .third-paragraph ul li::before {
-    left: 5px;
+    left: 3px;
   }
 }

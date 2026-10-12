@@ -102,7 +102,7 @@
 }
 
 .second-paragraph p {
-  margin-left: 10px;
+  margin-left: 40px;
 }
 
 
@@ -113,7 +113,7 @@
 
 .second-paragraph ul li {
   position: relative;
-  padding-left: 30px;
+  padding-left: 60px;
   margin-bottom: 15px;
   font-size: 16px;
 }
@@ -121,10 +121,10 @@
 .second-paragraph ul li::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 30px;
   top: 5px;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   background-image: url('/images/diamond-icon.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@
   border: 1px solid rgb(145, 222, 198);
   border-radius: 5px;
   box-shadow: 2px 2px 16px rgb(168, 234, 213);
-  padding: 20px 20px 40px 50px;
+  padding: 20px;
 }
 
 @media (max-width: 1250px){
@@ -164,6 +164,26 @@
   .zabieg-foto img {
     height: 420px;
   }
+
+  .second-paragraph .right-column,
+  .second-paragraph .left-column {
+    padding: 20px;
+  }
+
+  .second-paragraph h2,
+  .second-paragraph p {
+    margin-left: 0;
+  }
+
+  .second-paragraph ul li {
+    padding-left: 30px;
+  }
+
+  .second-paragraph ul li::before {
+    left: 3px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 
@@ -191,6 +211,26 @@
 
   .zabieg-foto img {
     height: 420px;
+  }
+
+  .second-paragraph .right-column,
+  .second-paragraph .left-column {
+    padding: 20px;
+  }
+
+  .second-paragraph h2,
+  .second-paragraph p {
+    margin-left: 0;
+  }
+
+  .second-paragraph ul li {
+    padding-left: 30px;
+  }
+
+  .second-paragraph ul li::before {
+    left: 3px;
+    width: 20px;
+    height: 20px;
   }
 
   h1{

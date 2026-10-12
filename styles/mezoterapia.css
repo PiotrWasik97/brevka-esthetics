@@ -127,8 +127,15 @@ body .mezoterapia-container {
   margin-left: 40px;
 }
 
-/* Podpis pod naglowkiem kolumny - wyrownany do naglowka, nie do krawedzi karty */
+/* Podpis pod naglowkiem kolumny - wyrownany do naglowka, nie do krawedzi karty.
+   Druga regula dotyczy masaz_hadado.html, ktory laduje tez akupunktura.css
+   centrujacy ten podpis przez display:flex - wyrownujemy go jak na reszcie. */
 .third-paragraph .column-lead {
+  margin-left: 40px;
+}
+
+.third-paragraph .right-column p {
+  display: block;
   margin-left: 40px;
 }
 
@@ -231,19 +238,23 @@ body .mezoterapia-container {
   }
 
   .third-paragraph h2 {
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   .third-paragraph .column-lead {
-    margin-left: 10px;
+    margin-left: 0;
+  }
+
+  .third-paragraph .right-column p {
+    margin-left: 0;
   }
 
   .third-paragraph ul li {
-    padding-left: 35px;
+    padding-left: 30px;
   }
 
   .third-paragraph ul li::before {
-    left: 5px;
+    left: 3px;
   }
 
   .second-paragraph {
