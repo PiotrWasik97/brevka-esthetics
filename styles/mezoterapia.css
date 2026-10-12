@@ -146,6 +146,7 @@
   background-color: rgba(145, 222, 198, 0.05); /* Bardzo delikatne tło */
   border-left: 4px solid rgb(84, 178, 149); /* Akcent boczny zamiast ramki wokół */
   line-height: 1.8;
+  margin-bottom: 30px;
 }
 
 .forth-paragraph h2 {
