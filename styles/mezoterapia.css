@@ -92,6 +92,10 @@
   gap: 100px;
 }
 
+.third-paragraph.single-column {
+  grid-template-columns: 1fr;
+}
+
 .third-paragraph .right-column,
 .left-column {
   border: 1px solid rgb(145, 222, 198);
@@ -103,6 +107,11 @@
 .third-paragraph h2 {
   margin-bottom: 30px;
   color: rgb(84, 178, 149);
+  margin-left: 40px;
+}
+
+/* Podpis pod naglowkiem kolumny - wyrownany do naglowka, nie do krawedzi karty */
+.third-paragraph .column-lead {
   margin-left: 40px;
 }
 
@@ -202,6 +211,10 @@
     margin-left: 10px;
   }
 
+  .third-paragraph .column-lead {
+    margin-left: 10px;
+  }
+
   .third-paragraph ul li {
     padding-left: 35px;
   }
@@ -213,5 +226,10 @@
   .second-paragraph {
     flex-direction: column-reverse;
     gap: 40px;
+  }
+
+  .second-paragraph img {
+    width: 100%;
+    max-width: 350px;
   }
 }

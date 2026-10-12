@@ -66,6 +66,7 @@
 }
 
 .second-paragraph {
+  margin-bottom: 50px;
   margin-top: 70px;
   border: 1px solid rgb(145, 222, 198);
   border-radius: 5px;
@@ -120,6 +121,20 @@
 .abyss-gallery img {
   width: 100%;
   aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 2px 2px 16px rgb(168, 234, 213);
+}
+
+.abyss-photo {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.abyss-photo img {
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 2px 2px 16px rgb(168, 234, 213);
