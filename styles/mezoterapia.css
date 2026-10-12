@@ -142,7 +142,6 @@
 /* --- NOWY STYL CZWARTEGO AKAPITU --- */
 .forth-paragraph {
   margin-top: 120px;
-  margin-bottom: 80px;
   padding: 40px;
   background-color: rgba(145, 222, 198, 0.05); /* Bardzo delikatne tło */
   border-left: 4px solid rgb(84, 178, 149); /* Akcent boczny zamiast ramki wokół */
@@ -190,14 +189,20 @@
 /* --- MEDIA QUERIES --- */
 
 @media (max-width: 1250px) {
-  .mezo-text { width: 800px; }
+  .mezo-text {
+    width: 800px;
+  }
 }
 
 @media (max-width: 860px) {
-  .mezo-text { width: 90%; }
-  
-  .forth-paragraph { padding: 25px; }
-  
+  .mezo-text {
+    width: 90%;
+  }
+
+  .forth-paragraph {
+    padding: 25px;
+  }
+
   .forth-paragraph ul {
     grid-template-columns: 1fr; /* Na komórkach jedna kolumna */
   }
