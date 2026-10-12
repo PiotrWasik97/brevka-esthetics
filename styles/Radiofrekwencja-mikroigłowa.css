@@ -63,11 +63,36 @@
 
 .second-paragraph {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.75fr 1.25fr;
   margin-top: 100px;
   padding-bottom: 100px;
   line-height: 30px;
-  gap: 100px;
+  gap: 40px;
+}
+
+/* Zdjecie zabiegu w lewej kolumnie, karty jedna pod druga po prawej.
+   W kodzie jest ostatnie, bo na mobile ta sekcja ma column-reverse
+   i wtedy trafia na gore. */
+.zabieg-foto {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: start;
+  position: sticky;
+  top: 100px;
+}
+
+.zabieg-foto img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 2px 2px 16px rgb(168, 234, 213);
+  display: block;
+}
+
+.second-paragraph .left-column,
+.second-paragraph .right-column {
+  grid-column: 2;
 }
 
 .second-paragraph h2 {
@@ -130,6 +155,15 @@
   .second-paragraph{
     display: flex;
     flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .zabieg-foto {
+    position: static;
+  }
+
+  .zabieg-foto img {
+    height: 420px;
   }
 }
 
@@ -149,6 +183,15 @@
   .second-paragraph{
     display: flex;
     flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .zabieg-foto {
+    position: static;
+  }
+
+  .zabieg-foto img {
+    height: 420px;
   }
 
   h1{
