@@ -1,7 +1,7 @@
 .zabiegi-container{
   position: relative;
   width: 100%;
-  top: 75px;
+  padding-top: 75px;
 }
 
 .zabiegi-title{
@@ -47,9 +47,8 @@
 .zabiegi-text{
   margin-top: 25px;
   width: 1200px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Raleway", sans-serif;
 }
 
@@ -107,7 +106,6 @@ border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
-  padding-bottom: 100px;
   line-height: 30px;
   gap: 100px;
 }
@@ -217,7 +215,6 @@ border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 100px;
-    padding-bottom: 100px;
     line-height: 30px;
     gap: 50px;
   }
@@ -253,7 +250,6 @@ border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 100px;
-    padding-bottom: 100px;
     line-height: 30px;
     gap: 50px;
   }
@@ -276,7 +272,6 @@ border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 100px;
-    padding-bottom: 100px;
     line-height: 30px;
     gap: 50px;
   }

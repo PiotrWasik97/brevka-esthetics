@@ -4,7 +4,7 @@
 .mezoterapia-container {
   position: relative;
   width: 100%;
-  top: 75px;
+  padding-top: 75px;
 }
 
 .mezo-title {
@@ -50,23 +50,12 @@
 .mezo-text {
   margin-top: 25px;
   width: 1200px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Raleway", sans-serif;
 }
 
-/* masaz_hadado.html laduje dodatkowo akupunktura.css, ktory doklada
-   padding-bottom: 100px na kontenerze i na .mezo-text. Zerujemy oba, zeby
-   odstep pod przeciwwskazaniami byl taki sam jak na pozostalych podstronach
-   z tym ukladem. Selektory musza byc bardziej szczegolowe, bo akupunktura.css
-   laduje sie pozniej. */
-body .mezoterapia-container {
-  padding-bottom: 0;
-}
-
 .mezoterapia-container .mezo-text {
-  padding-bottom: 0;
   /* zamyka kontekst formatowania, zeby margines ostatniej sekcji nie
      wyciekal poza kontener (dzieje sie tak na mobile, gdy .mezo-text
      wraca do normalnego przeplywu) */
@@ -265,5 +254,14 @@ body .mezoterapia-container {
   .second-paragraph img {
     width: 100%;
     max-width: 350px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* "PRZECIWWSKAZANIA:" w 28px wersalikami nie miescilo sie w kolumnie
+     i rozpychalo strone o kilka pikseli w bok */
+  .forth-paragraph h2 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
   }
 }

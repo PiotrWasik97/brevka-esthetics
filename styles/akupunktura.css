@@ -1,8 +1,7 @@
 .mezoterapia-container {
   position: relative;
   width: 100%;
-  top: 75px;
-  padding-bottom: 100px;
+  padding-top: 75px;
 }
 
 .mezo-title {
@@ -49,11 +48,9 @@
 .mezo-text {
   margin-top: 25px;
   width: 1200px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Raleway", sans-serif;
-  padding-bottom: 100px;
 }
 
 .mezo-text span {
@@ -151,9 +148,6 @@
 @media (max-width: 860px) {
   .mezo-text {
     width: 90%;
-    position: relative;
-    left: auto;
-    transform: none;
     margin: 25px auto 0 auto;
   }
 

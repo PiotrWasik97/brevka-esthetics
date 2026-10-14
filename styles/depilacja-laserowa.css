@@ -1,7 +1,7 @@
 .laser-container {
   position: relative;
   width: 100%;
-  top: 75px;
+  padding-top: 75px;
 }
 
 .laser-title {
@@ -47,11 +47,9 @@
 .laser-text {
   margin-top: 25px;
   width: 1200px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Raleway", sans-serif;
-  padding-bottom: 100px;
 }
 
 .laser-text h2 {

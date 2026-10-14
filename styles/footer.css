@@ -1,0 +1,85 @@
+.site-footer {
+  background: linear-gradient(to right, #f6fcfb, #e6f7f5);
+  border-top: 1px solid rgba(113, 203, 175, 0.25);
+  font-family: "Raleway", sans-serif;
+}
+
+/* Odstep nad stopka robia kontenery podstron, a nie margines stopki - dzieki
+   temu na stronie glownej i w cenniku, ktore koncza sie wlasna sekcja z tlem,
+   stopka przylega do niej bez bialego paska. Selektory z "body" sa potrzebne,
+   zeby wygrac z regulami kontenerow w arkuszach podstron. */
+body .laser-container,
+body .mezoterapia-container,
+body .zabiegi-container,
+body .abyss-container,
+body .sqt-container,
+body .title-container,
+body .polityka-container {
+  padding-bottom: 60px;
+}
+
+/* Margines dolny ostatniego bloku tresci to juz tylko pusta przestrzen na
+   koncu strony - kasujemy go, zeby odstep nad stopka wszedzie wynosil 60px. */
+body .laser-text > *:last-child,
+body .mezo-text > *:last-child,
+body .zabiegi-text > *:last-child,
+body .abyss-text > *:last-child,
+body .sqt-text > *:last-child,
+body .radiacja-text > *:last-child,
+body .polityka-text > *:last-child {
+  margin-bottom: 0;
+}
+
+.site-footer-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.site-footer-copy {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgb(12, 77, 56);
+}
+
+.site-footer-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.site-footer-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2c3e50;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  transition: color 0.3s;
+}
+
+.site-footer-links a:hover {
+  color: rgb(113, 203, 175);
+}
+
+@media (max-width: 860px) {
+  .site-footer-inner {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .site-footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
