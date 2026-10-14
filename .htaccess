@@ -1,0 +1,27 @@
+# Czyste adresy bez koncowki .html
+# brevka.pl/cennik  zamiast  brevka.pl/cennik.html
+
+RewriteEngine On
+
+# --- 1. Strona glowna: /index.html -> / ---
+RewriteRule ^index\.html$ / [R=301,L]
+
+# --- 2. Stare nazwy plikow -> nowe adresy (301, zeby stare linki nie umarly) ---
+RewriteRule ^oczysczanie-wodorowe\.html$   /oczyszczanie-wodorowe   [R=301,L]
+RewriteRule ^zabiegi-abyss\.html$          /zabiegi-pielegnacyjne   [R=301,L]
+RewriteRule ^Mediderma\.html$              /peeling-mediderma       [R=301,L]
+RewriteRule ^guasha-plecow\.html$          /guasha-terapeutyczna    [R=301,L]
+RewriteRule ^masaz_hadado\.html$           /masaz-hadado            [R=301,L]
+RewriteRule ^SQT-Biomicroneedling\.html$   /sqt-biomicroneedling    [R=301,L]
+
+# --- 3. Kazdy inny adres z .html -> wersja bez rozszerzenia ---
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# --- 4. Adres bez rozszerzenia -> serwuj odpowiedni plik .html ---
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ /$1.html [L]
+
+# --- 5. Strona bledu 404 ---
+ErrorDocument 404 /index.html
